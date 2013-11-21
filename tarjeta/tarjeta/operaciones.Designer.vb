@@ -22,70 +22,120 @@ Partial Class operaciones
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnsaldo = New System.Windows.Forms.Button()
+        Me.btnmov = New System.Windows.Forms.Button()
+        Me.btnsalir = New System.Windows.Forms.Button()
+        Me.btnretiro = New System.Windows.Forms.Button()
+        Me.btnpin = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnsaldo
         '
-        Me.Button1.Font = New System.Drawing.Font("Bauhaus 93", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Image = Global.tarjeta.My.Resources.Resources._next
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.Location = New System.Drawing.Point(152, 46)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(252, 50)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Retiro"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnsaldo.Font = New System.Drawing.Font("Bauhaus 93", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsaldo.Image = Global.tarjeta.My.Resources.Resources._next
+        Me.btnsaldo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnsaldo.Location = New System.Drawing.Point(27, 149)
+        Me.btnsaldo.Name = "btnsaldo"
+        Me.btnsaldo.Size = New System.Drawing.Size(279, 50)
+        Me.btnsaldo.TabIndex = 0
+        Me.btnsaldo.Text = "Consulta de Saldo"
+        Me.btnsaldo.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnmov
         '
-        Me.Button2.Font = New System.Drawing.Font("Bauhaus 93", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Image = Global.tarjeta.My.Resources.Resources._next
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.Location = New System.Drawing.Point(152, 120)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(252, 56)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "consulta de saldo"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnmov.Font = New System.Drawing.Font("Bauhaus 93", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnmov.Image = Global.tarjeta.My.Resources.Resources._next
+        Me.btnmov.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnmov.Location = New System.Drawing.Point(334, 149)
+        Me.btnmov.Name = "btnmov"
+        Me.btnmov.Size = New System.Drawing.Size(278, 50)
+        Me.btnmov.TabIndex = 1
+        Me.btnmov.Text = "Ultimos Movimientos"
+        Me.btnmov.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnsalir
         '
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.Font = New System.Drawing.Font("Bauhaus 93", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Image = Global.tarjeta.My.Resources.Resources.delete1
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button3.Location = New System.Drawing.Point(200, 271)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Padding = New System.Windows.Forms.Padding(2)
-        Me.Button3.Size = New System.Drawing.Size(144, 43)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Cancelar"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnsalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnsalir.Font = New System.Drawing.Font("Bauhaus 93", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsalir.Image = Global.tarjeta.My.Resources.Resources.delete1
+        Me.btnsalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnsalir.Location = New System.Drawing.Point(234, 366)
+        Me.btnsalir.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.btnsalir.Name = "btnsalir"
+        Me.btnsalir.Padding = New System.Windows.Forms.Padding(2)
+        Me.btnsalir.Size = New System.Drawing.Size(182, 43)
+        Me.btnsalir.TabIndex = 2
+        Me.btnsalir.Text = "Cerrar Sesión"
+        Me.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnsalir.UseVisualStyleBackColor = True
+        '
+        'btnretiro
+        '
+        Me.btnretiro.Font = New System.Drawing.Font("Bauhaus 93", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnretiro.Image = Global.tarjeta.My.Resources.Resources._next
+        Me.btnretiro.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnretiro.Location = New System.Drawing.Point(27, 252)
+        Me.btnretiro.Name = "btnretiro"
+        Me.btnretiro.Size = New System.Drawing.Size(279, 50)
+        Me.btnretiro.TabIndex = 3
+        Me.btnretiro.Text = "Retiro Efectivo"
+        Me.btnretiro.UseVisualStyleBackColor = True
+        '
+        'btnpin
+        '
+        Me.btnpin.Font = New System.Drawing.Font("Bauhaus 93", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnpin.Image = Global.tarjeta.My.Resources.Resources._next
+        Me.btnpin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnpin.Location = New System.Drawing.Point(334, 252)
+        Me.btnpin.Name = "btnpin"
+        Me.btnpin.Size = New System.Drawing.Size(278, 50)
+        Me.btnpin.TabIndex = 4
+        Me.btnpin.Text = "Cambiar Pin"
+        Me.btnpin.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Bauhaus 93", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Label1.Location = New System.Drawing.Point(165, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(319, 66)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Bienvenido" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Seleccione Operación"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'operaciones
         '
+        Me.AllowDrop = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange
         Me.BackgroundImage = Global.tarjeta.My.Resources.Resources.FONDO1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(537, 324)
+        Me.ClientSize = New System.Drawing.Size(634, 457)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnpin)
+        Me.Controls.Add(Me.btnretiro)
+        Me.Controls.Add(Me.btnsalir)
+        Me.Controls.Add(Me.btnmov)
+        Me.Controls.Add(Me.btnsaldo)
         Me.DoubleBuffered = True
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "operaciones"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnsaldo As System.Windows.Forms.Button
+    Friend WithEvents btnmov As System.Windows.Forms.Button
+    Friend WithEvents btnsalir As System.Windows.Forms.Button
+    Friend WithEvents btnretiro As System.Windows.Forms.Button
+    Friend WithEvents btnpin As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
