@@ -39,13 +39,13 @@ Public Class iniciar
                     With frmcajero._cmd
                         .CommandType = CommandType.StoredProcedure
                         .CommandText = "AUTH_PIN"
-                        .Parameters.Add(New OracleParameter("vtarjeta", OracleDbType.Varchar2)).Value = (txttarjeta.Text)
-                        .Parameters.Add(New OracleParameter("vpin", OracleDbType.Varchar2)).Value = hash
-                        .Parameters.Add(New OracleParameter("vnombre", OracleDbType.Varchar2, ParameterDirection.Output))
-                        .Parameters.Add(New OracleParameter("vcuenta", OracleDbType.Varchar2, ParameterDirection.Output))
-                        .Parameters.Add(New OracleParameter("vidcliente", OracleDbType.Int32, ParameterDirection.Output))
-                        .Parameters.Add(New OracleParameter("vidcuenta", OracleDbType.Int32, ParameterDirection.Output))
-                        .Parameters.Add(New OracleParameter("vestado", OracleDbType.Int32, ParameterDirection.Output))
+                        .Parameters.Add(New OracleParameter("vtarjeta", OracleDbType.Int32)).Value = CInt(txttarjeta.Text)
+                        .Parameters.Add(New OracleParameter("vpin", OracleDbType.Varchar2)).Value = hash.ToString
+                        .Parameters.Add(New OracleParameter("vnombre", OracleDbType.Varchar2, 250, ParameterDirection.Output))
+                        .Parameters.Add(New OracleParameter("vcuenta", OracleDbType.Varchar2, 250, ParameterDirection.Output))
+                        .Parameters.Add(New OracleParameter("vidcliente", OracleDbType.Int32, 250, ParameterDirection.Output))
+                        .Parameters.Add(New OracleParameter("vidcuenta", OracleDbType.Int32, 250, ParameterDirection.Output))
+                        .Parameters.Add(New OracleParameter("vestado", OracleDbType.Int32, 250, ParameterDirection.Output))
 
                     End With
                     frmcajero._cmd.ExecuteNonQuery()
