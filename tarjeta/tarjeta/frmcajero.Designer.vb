@@ -33,7 +33,7 @@ Partial Class frmcajero
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Bauhaus 93", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Label3.Location = New System.Drawing.Point(124, 96)
+        Me.Label3.Location = New System.Drawing.Point(102, 46)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(229, 33)
         Me.Label3.TabIndex = 36
@@ -43,7 +43,7 @@ Partial Class frmcajero
         'txtcodcajero
         '
         Me.txtcodcajero.Font = New System.Drawing.Font("Bauhaus 93", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcodcajero.Location = New System.Drawing.Point(199, 155)
+        Me.txtcodcajero.Location = New System.Drawing.Point(177, 105)
         Me.txtcodcajero.Name = "txtcodcajero"
         Me.txtcodcajero.Size = New System.Drawing.Size(83, 66)
         Me.txtcodcajero.TabIndex = 37
@@ -54,9 +54,9 @@ Partial Class frmcajero
         Me.btningresar.BackColor = System.Drawing.Color.Transparent
         Me.btningresar.Image = Global.tarjeta.My.Resources.Resources.salir_de_gnome_icono_8179_48
         Me.btningresar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btningresar.Location = New System.Drawing.Point(199, 244)
+        Me.btningresar.Location = New System.Drawing.Point(177, 193)
         Me.btningresar.Name = "btningresar"
-        Me.btningresar.Size = New System.Drawing.Size(75, 66)
+        Me.btningresar.Size = New System.Drawing.Size(83, 66)
         Me.btningresar.TabIndex = 38
         Me.btningresar.Text = "Ingresar"
         Me.btningresar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -68,13 +68,14 @@ Partial Class frmcajero
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.tarjeta.My.Resources.Resources.FONDO1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(475, 388)
+        Me.ClientSize = New System.Drawing.Size(430, 322)
         Me.ControlBox = False
         Me.Controls.Add(Me.btningresar)
         Me.Controls.Add(Me.txtcodcajero)
         Me.Controls.Add(Me.Label3)
         Me.DoubleBuffered = True
         Me.Name = "frmcajero"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

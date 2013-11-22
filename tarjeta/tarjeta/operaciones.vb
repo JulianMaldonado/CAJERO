@@ -29,4 +29,9 @@
         Me.Close()
         frmpin.Visible = True
     End Sub
+
+    Private Sub btnretiro_Click(sender As Object, e As EventArgs) Handles btnretiro.Click
+        Me.Close()
+        frmretiro.Visible = True
+    End Sub
 End Class
