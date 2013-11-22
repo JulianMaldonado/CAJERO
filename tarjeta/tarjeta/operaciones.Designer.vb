@@ -27,7 +27,8 @@ Partial Class operaciones
         Me.btnsalir = New System.Windows.Forms.Button()
         Me.btnretiro = New System.Windows.Forms.Button()
         Me.btnpin = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblnombre = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnsaldo
@@ -94,18 +95,30 @@ Partial Class operaciones
         Me.btnpin.Text = "Cambiar Pin"
         Me.btnpin.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lblnombre
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Bauhaus 93", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Label1.Location = New System.Drawing.Point(165, 24)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(319, 66)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Bienvenido" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Seleccione Operación"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblnombre.BackColor = System.Drawing.Color.Transparent
+        Me.lblnombre.Font = New System.Drawing.Font("Bauhaus 93", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblnombre.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.lblnombre.Location = New System.Drawing.Point(72, 24)
+        Me.lblnombre.Name = "lblnombre"
+        Me.lblnombre.Size = New System.Drawing.Size(487, 66)
+        Me.lblnombre.TabIndex = 6
+        Me.lblnombre.Text = "Bienvenido"
+        Me.lblnombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Bauhaus 93", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Label2.Location = New System.Drawing.Point(156, 90)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(319, 33)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Seleccione Operación"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'operaciones
         '
@@ -117,7 +130,8 @@ Partial Class operaciones
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(634, 457)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblnombre)
         Me.Controls.Add(Me.btnpin)
         Me.Controls.Add(Me.btnretiro)
         Me.Controls.Add(Me.btnsalir)
@@ -137,5 +151,6 @@ Partial Class operaciones
     Friend WithEvents btnsalir As System.Windows.Forms.Button
     Friend WithEvents btnretiro As System.Windows.Forms.Button
     Friend WithEvents btnpin As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblnombre As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

@@ -27,15 +27,15 @@ Partial Class frmconsultasaldo
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtnombre = New System.Windows.Forms.TextBox()
         Me.txtapellido = New System.Windows.Forms.TextBox()
-        Me.txtbanco = New System.Windows.Forms.TextBox()
         Me.txtcuenta = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtsaldo = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txttipo = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnsalir
@@ -106,19 +106,6 @@ Partial Class frmconsultasaldo
         Me.Label4.Text = "Saldo"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Bauhaus 93", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Label5.Location = New System.Drawing.Point(55, 180)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(102, 33)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Banco"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -150,15 +137,6 @@ Partial Class frmconsultasaldo
         Me.txtapellido.Size = New System.Drawing.Size(249, 37)
         Me.txtapellido.TabIndex = 13
         '
-        'txtbanco
-        '
-        Me.txtbanco.Enabled = False
-        Me.txtbanco.Font = New System.Drawing.Font("Bauhaus 93", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtbanco.Location = New System.Drawing.Point(191, 176)
-        Me.txtbanco.Name = "txtbanco"
-        Me.txtbanco.Size = New System.Drawing.Size(249, 37)
-        Me.txtbanco.TabIndex = 14
-        '
         'txtcuenta
         '
         Me.txtcuenta.Enabled = False
@@ -168,14 +146,14 @@ Partial Class frmconsultasaldo
         Me.txtcuenta.Size = New System.Drawing.Size(199, 37)
         Me.txtcuenta.TabIndex = 15
         '
-        'TextBox1
+        'txtsaldo
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Font = New System.Drawing.Font("Bauhaus 93", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(241, 281)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(199, 37)
-        Me.TextBox1.TabIndex = 16
+        Me.txtsaldo.Enabled = False
+        Me.txtsaldo.Font = New System.Drawing.Font("Bauhaus 93", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtsaldo.Location = New System.Drawing.Point(241, 281)
+        Me.txtsaldo.Name = "txtsaldo"
+        Me.txtsaldo.Size = New System.Drawing.Size(199, 37)
+        Me.txtsaldo.TabIndex = 16
         '
         'Label7
         '
@@ -203,6 +181,28 @@ Partial Class frmconsultasaldo
         Me.Label8.Text = "No."
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Bauhaus 93", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Label5.Location = New System.Drawing.Point(55, 180)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(186, 33)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Tipo Cuenta"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txttipo
+        '
+        Me.txttipo.Enabled = False
+        Me.txttipo.Font = New System.Drawing.Font("Bauhaus 93", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txttipo.Location = New System.Drawing.Point(241, 176)
+        Me.txttipo.Name = "txttipo"
+        Me.txttipo.Size = New System.Drawing.Size(199, 37)
+        Me.txttipo.TabIndex = 14
+        '
         'frmconsultasaldo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -213,9 +213,9 @@ Partial Class frmconsultasaldo
         Me.ControlBox = False
         Me.Controls.Add(Me.txtcuenta)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtsaldo)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.txtbanco)
+        Me.Controls.Add(Me.txttipo)
         Me.Controls.Add(Me.txtapellido)
         Me.Controls.Add(Me.txtnombre)
         Me.Controls.Add(Me.Label6)
@@ -239,13 +239,13 @@ Partial Class frmconsultasaldo
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtnombre As System.Windows.Forms.TextBox
     Friend WithEvents txtapellido As System.Windows.Forms.TextBox
-    Friend WithEvents txtbanco As System.Windows.Forms.TextBox
     Friend WithEvents txtcuenta As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtsaldo As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents txttipo As System.Windows.Forms.TextBox
 End Class

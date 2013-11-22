@@ -41,27 +41,29 @@ Public Class iniciar
                         .CommandText = "AUTH_PIN"
                         .Parameters.Add(New OracleParameter("vtarjeta", OracleDbType.Int32)).Value = CInt(txttarjeta.Text)
                         .Parameters.Add(New OracleParameter("vpin", OracleDbType.Varchar2)).Value = hash.ToString
-                        .Parameters.Add(New OracleParameter("vnombre", OracleDbType.Varchar2, 250, ParameterDirection.Output))
-                        .Parameters.Add(New OracleParameter("vcuenta", OracleDbType.Varchar2, 250, ParameterDirection.Output))
-                        .Parameters.Add(New OracleParameter("vidcliente", OracleDbType.Int32, 250, ParameterDirection.Output))
-                        .Parameters.Add(New OracleParameter("vidcuenta", OracleDbType.Int32, 250, ParameterDirection.Output))
-                        .Parameters.Add(New OracleParameter("vestado", OracleDbType.Int32, 250, ParameterDirection.Output))
+                        .Parameters.Add(New OracleParameter("vidcliente", OracleDbType.Int32, ParameterDirection.Output))
+                        .Parameters.Add(New OracleParameter("vidcuenta", OracleDbType.Int32, ParameterDirection.Output))
+                        .Parameters.Add(New OracleParameter("vestado", OracleDbType.Int32, ParameterDirection.Output))
 
                     End With
                     frmcajero._cmd.ExecuteNonQuery()
 
-                    frmcajero.nombre = frmcajero._cmd.Parameters("vnombre").Value.ToString
-                    frmcajero.cuenta = frmcajero._cmd.Parameters("vcuenta").Value.ToString
+
+
                     frmcajero.idcliente = frmcajero._cmd.Parameters("vidcliente").Value.ToString
                     frmcajero.idcuenta = frmcajero._cmd.Parameters("vidcuenta").Value.ToString
 
-                    If frmcajero._cmd.Parameters("vidcuenta").Value > 0 Then
+                    If frmcajero._cmd.Parameters("vestado").Value > 0 Then
+                        frmcajero._cnnbanco.Close()
                         Dim form As New operaciones
                         txttarjeta.Text = ""
                         txtpin.Text = ""
 
                         form.Show()
                         Me.Visible = False
+                        '  MsgBox(frmcajero._cmd.Parameters("vidcliente").Value.ToString)
+                        '  MsgBox(frmcajero._cmd.Parameters("vidcuenta").Value.ToString)
+
                     Else
                         MsgBox("LA TARJETA NO EXISTE", vbCritical)
                     End If
